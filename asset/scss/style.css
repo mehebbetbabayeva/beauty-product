@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background: #FFFCF9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .container .header-content {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .header-content nav ul {
+  display: flex;
+  align-items: center;
+}
+header .container .header-content nav ul li {
+  margin-left: 30px;
+}
+header .container .header-content nav ul li a {
+  color: #000;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+header .container .header-content .cart ul {
+  display: flex;
+  align-items: center;
+}
+header .container .header-content .cart ul li {
+  margin-left: 25px;
+}
+header .container .header-content .cart ul li a {
+  color: #000;
+}
+header .container .header-content .cart ul .cart-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #FF860D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container .header-content .cart ul .cart-icon a {
+  color: white;
+  font-size: 18px;
+}
+header .container .header-content .menu {
+  display: none;
+  color: #FF860D;
+  font-size: 25px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  header .container .header-content nav {
+    display: none;
+  }
+  header .container .header-content .cart {
+    display: none;
+  }
+  header .container .header-content .menu {
+    display: block;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  header .container .header-content nav {
+    display: none;
+  }
+  header .container .header-content .cart {
+    display: none;
+  }
+  header .container .header-content .menu {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
