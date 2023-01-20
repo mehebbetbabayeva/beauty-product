@@ -70,7 +70,6 @@ header .container .header-content .menu {
 main #home {
   margin-top: 90px;
   padding-top: 20px;
-  border: 1px solid red;
   height: 160vh;
   background-color: #F2ECE7;
 }
@@ -92,7 +91,6 @@ main #home .container .home-content .product-item-left-top p {
   text-align: center;
   color: #403C3C;
   font-size: 16px;
-  font-family: "Red Hat Display", sans-serif;
 }
 main #home .container .home-content .home-text {
   width: 830px;
@@ -102,7 +100,6 @@ main #home .container .home-content .home-text {
 }
 main #home .container .home-content .home-text p {
   font-size: 120px;
-  font-family: "Red Hat Display", sans-serif;
   color: #413E3C;
 }
 main #home .container .home-content .home-text p span {
@@ -224,7 +221,7 @@ main #home .container .home-content .home-shop ul .icon a {
   color: white;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   header .container .header-content nav {
     display: none;
   }
@@ -233,6 +230,38 @@ main #home .container .home-content .home-shop ul .icon a {
   }
   header .container .header-content .menu {
     display: block;
+  }
+  main #home {
+    height: auto;
+  }
+  main #home .container .home-content .home-text {
+    width: 100%;
+    top: 25%;
+    left: 0;
+  }
+  main #home .container .home-content .home-text p {
+    font-size: 50px;
+  }
+  main #home .container .home-content .product-item-right-top {
+    display: none;
+  }
+  main #home .container .home-content .home-logo {
+    display: none;
+  }
+  main #home .container .home-content .product-item-left-bottom {
+    top: 55%;
+  }
+  main #home .container .home-content .product-item-right-bottom {
+    display: none;
+  }
+  main #home .container .home-content .home-social {
+    right: 10px;
+    top: 20px;
+  }
+  main #home .container .home-content .home-shop {
+    left: 0;
+    bottom: 0;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -244,5 +273,77 @@ main #home .container .home-content .home-shop ul .icon a {
   }
   header .container .header-content .menu {
     display: block;
+  }
+  main #home {
+    height: 190vh;
+  }
+  main #home .container .home-content {
+    height: 190vh;
+  }
+  main #home .container .home-content .home-text {
+    width: 100%;
+    top: 25%;
+    left: 0;
+  }
+  main #home .container .home-content .home-text p {
+    font-size: 60px;
+  }
+  main #home .container .home-content .product-item-right-top {
+    display: none;
+  }
+  main #home .container .home-content .home-logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  main #home .container .home-content .product-item-left-bottom {
+    bottom: 5%;
+    left: 0;
+  }
+  main #home .container .home-content .product-item-right-bottom {
+    bottom: 30%;
+    left: 0;
+    margin-bottom: 20px;
+  }
+  main #home .container .home-content .home-shop {
+    bottom: 5%;
+    right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  main #home {
+    height: 190vh;
+  }
+  main #home .container .home-content {
+    height: 190vh;
+  }
+  main #home .container .home-content .home-text {
+    width: 100%;
+    top: 25%;
+    left: 0;
+  }
+  main #home .container .home-content .home-text p {
+    font-size: 60px;
+  }
+  main #home .container .home-content .product-item-right-top {
+    display: none;
+  }
+  main #home .container .home-content .home-logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  main #home .container .home-content .product-item-left-bottom {
+    bottom: 5%;
+    left: 0;
+  }
+  main #home .container .home-content .product-item-right-bottom {
+    bottom: 30%;
+    left: 0;
+    margin-bottom: 20px;
+  }
+  main #home .container .home-content .home-shop {
+    bottom: 5%;
+    right: 0;
   }
 }/*# sourceMappingURL=style.css.map */

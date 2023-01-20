@@ -80,7 +80,6 @@ main{
     #home{
         margin-top: 90px;
         padding-top: 20px;
-        border: 1px solid red;
         height: 160vh;
         background-color:#F2ECE7;
         .container{
@@ -100,7 +99,6 @@ main{
                         text-align: center;
                         color: #403C3C;
                         font-size: 16px;
-                        font-family:  'Red Hat Display', sans-serif; ;
                     }
                 }
                 .home-text{
@@ -110,7 +108,6 @@ main{
                     left: 240px;
                     p{
                         font-size: 120px;
-                        font-family: 'Red Hat Display', sans-serif;
                         color:#413E3C;
                         span{
                             color: #FF6F0F;
@@ -232,15 +229,15 @@ main{
     }
 }
 
-//font-family:  'Red Hat Display', sans-serif;
+
 
 
 //responsive mobil
 
-@media (min-width:320px) and (max-width:480px){
+@media screen and (min-width: 320px) and (max-width: 480px){
     header{
         .container{
-            .header-content{
+            .header-content{   
                 nav{
                     display: none;
                 }
@@ -253,7 +250,46 @@ main{
             }
         }
     }
-}
+    main{
+        #home{
+            height: auto;
+            .container{
+                .home-content{
+                    .home-text{
+                        width: 100%;
+                        top: 25%;
+                        left: 0;
+                        p{
+                            font-size: 50px;
+                        }
+                    }
+                    .product-item-right-top{
+                        display: none;
+                    }
+                    .home-logo{
+                     display: none; 
+                    }
+                    .product-item-left-bottom{
+                        top:55% ;
+                    }
+                    .product-item-right-bottom{
+                        display: none;
+                    }
+                    .home-social{
+                         right: 10px;
+                         top: 20px;  
+                    }
+                    .home-shop{
+                        left: 0;
+                        bottom: 0;
+                        margin-bottom: 20px;
+                    }                    
+                }    
+                }
+            }
+        }
+    }
+
 
 
 //responsive tablet 
@@ -272,5 +308,93 @@ main{
                 }
             }
         }
-    }
+    } 
+    main{
+        #home{
+            height:190vh;
+            .container{
+                .home-content{
+                    height:190vh;
+                    .home-text{
+                        width: 100%;
+                        top: 25%;
+                        left:0;
+                        p{
+                            font-size: 60px;
+                        }
+                    }
+                    .product-item-right-top{
+                        display: none;
+                    }
+                    .home-logo{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        
+                    }
+                    .product-item-left-bottom{
+                         bottom: 5%;
+                        left: 0;   
+                    }
+                    .product-item-right-bottom{
+                        bottom: 30%;
+                        left: 0;
+                        margin-bottom: 20px;
+                    }
+                    
+                    .home-shop{
+                        bottom: 5%;
+                        right: 0;
+                        
+                    }
+                }
+            }
+        }
+    } 
+}
+
+//responsive laptop
+@media (min-width:768px) and (max-width:1023px){
+    main{
+        #home{
+            height:190vh;
+            .container{
+                .home-content{
+                    height:190vh;
+                    .home-text{
+                        width: 100%;
+                        top: 25%;
+                        left:0;
+                        p{
+                            font-size: 60px;
+                        }
+                    }
+                    .product-item-right-top{
+                        display: none;
+                    }
+                    .home-logo{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        
+                    }
+                    .product-item-left-bottom{
+                         bottom: 5%;
+                        left: 0;   
+                    }
+                    .product-item-right-bottom{
+                        bottom: 30%;
+                        left: 0;
+                        margin-bottom: 20px;
+                    }
+                    
+                    .home-shop{
+                        bottom: 5%;
+                        right: 0;
+                        
+                    }
+                }
+            }
+        }
+    } 
 }
