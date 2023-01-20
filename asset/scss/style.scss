@@ -4,6 +4,7 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    font-family:  'Red Hat Display', sans-serif;
 }
 .container{
     max-width: 90%;
@@ -22,10 +23,10 @@
 header{
     width: 100%;
     height: 90px;
-    background:  #FFFCF9;
-    position: absolute;
+    background-color:  #F2ECE7;
+    position:fixed;
     top: 0;
-    left: 0;
+    z-index: 10;
     .container{
         .header-content{
             height: 90px;
@@ -75,8 +76,163 @@ header{
         }
     }
 }
+main{
+    #home{
+        margin-top: 90px;
+        padding-top: 20px;
+        border: 1px solid red;
+        height: 160vh;
+        background-color:#F2ECE7;
+        .container{
+            .home-content{
+                height: 160vh;
+                width: 100%;
+                position: relative;
+                .product-item-left-top{
+                    width: 144px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    img{
+                        border-radius: 50%;
+                    }
+                    p{
+                        text-align: center;
+                        color: #403C3C;
+                        font-size: 16px;
+                        font-family:  'Red Hat Display', sans-serif; ;
+                    }
+                }
+                .home-text{
+                    width: 830px;
+                    position: absolute;
+                    top: 0;
+                    left: 240px;
+                    p{
+                        font-size: 120px;
+                        font-family: 'Red Hat Display', sans-serif;
+                        color:#413E3C;
+                        span{
+                            color: #FF6F0F;
+                        }
+                    }
+                }
+                .product-item-right-top{
+                    position: absolute;
+                    top: 20px;
+                    right: 30px;
+                }
+                .home-logo{
+                    position: absolute;
+                    right: 300px;
+                    top: 350px;
+                    
+                }
+                .product-item-left-bottom{
+                    position: absolute;
+                    left: 0;
+                    bottom:230px;
+                    .first-image{
+                        position: relative;
+                    }
+                    .second-image{
+                        position: absolute;
+                        top: 50px;
+                        left: 170px;
+                    }
+                    ul{
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
+                        li{
+                            margin-right: 10px;
+                            a{
+                                color: #FF6F0F;
+                                font-size: 24px;
+                            }
+                        }
+                        .icon{
+                            width: 36px;
+                            height: 36px;
+                            border-radius: 50%;
+                            background-color: #FF6F0F;
+                            @include flex-center();
+                            a{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                .product-item-right-bottom{
+                    position: absolute;
+                    bottom: 260px;
+                    right: 370px;
+                    img{
+                        position: relative;
+                       margin-bottom: 30px;
+                    }
+                    p{
+                        position: absolute;
+                        left: 150px;
+                        bottom: 0;
+                        width: 420px;
+                        font-size: 18px;
+                        color: #403C3C;
+                    }
+                }
+                .home-social{
+                    position: absolute;
+                    right: 0;
+                    top: 40%;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        li{
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                            border: 1px solid #FF6F0F;
+                            background-color: #F2ECE7;
+                            @include flex-center();
+                            margin-bottom: 10px;
+                            a{
+                                color: #535353;
+                            }
+                        }
+                    }
+                }
+                .home-shop{
+                    position: absolute;
+                    bottom: 200px;
+                    right: 0;
+                   ul{
+                    display: flex;
+                    align-items: center;
+                    li{
+                        margin-right: 10px;
+                        a{
+                            color: #FF6F0F;
+                            font-size: 24px;
+                        }
+                    }
+                    .icon{
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        background-color: #FF6F0F;
+                        @include flex-center();
+                        a{
+                            color: white;
+                        }
+                    }
+                   }
+                }
+            }
+        }
+    }
+}
 
-
+//font-family:  'Red Hat Display', sans-serif;
 
 
 //responsive mobil
