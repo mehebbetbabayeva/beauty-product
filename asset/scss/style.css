@@ -640,4 +640,37 @@ main #about .container .about-content .about-card .card-item .card-item-title .i
   main #product .container .product-content .product-text .product-total .border-total {
     padding: 0 10px;
   }
+  main #about {
+    width: 100%;
+    height: auto;
+  }
+  main #about .container {
+    width: 100%;
+  }
+  main #about .container .about-content {
+    height: auto;
+    width: 100%;
+  }
+  main #about .container .about-content h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  main #about .container .about-content .about-card {
+    flex-direction: row;
+  }
+  main #about .container .about-content .about-card .card-item {
+    width: 33%;
+    margin-left: 10px;
+  }
+  main #about .container .about-content .about-card .card-item img {
+    width: 100%;
+  }
+  main #about .container .about-content .about-card .card-item .card-item-title {
+    flex-direction: column;
+    height: 100px;
+  }
+  main #about .container .about-content .about-card .card-item .card-item-title li {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

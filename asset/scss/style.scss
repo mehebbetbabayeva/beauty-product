@@ -626,6 +626,7 @@ main{
 }
 
 //responsive laptop
+
 @media (min-width:768px) and (max-width:1023px){
     main{
         #home{
@@ -710,6 +711,38 @@ main{
                 }
             }
         }
-       
+        #about{
+            width: 100%;
+            height: auto;
+            .container{
+                width: 100%;
+                .about-content{
+                    height:auto;
+                    width: 100%;
+                    h1{   
+                        font-size: 40px;
+                        text-align: center;
+                        margin: 20px 0;   
+                    }
+                    .about-card{                  
+                     flex-direction: row;
+                     .card-item{
+                        width: 33%;
+                        margin-left: 10px;
+                        img{
+                            width: 100%;
+                        }
+                        .card-item-title{
+                            flex-direction: column;
+                            height: 100px;
+                            li{
+                                text-align: center;  
+                            }
+                        }
+                     }
+                    }
+                }
+            }
+        }
     } 
 }
