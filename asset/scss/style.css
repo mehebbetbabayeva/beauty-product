@@ -220,6 +220,70 @@ main #home .container .home-content .home-shop ul .icon {
 main #home .container .home-content .home-shop ul .icon a {
   color: white;
 }
+main #product {
+  height: 100vh;
+}
+main #product .container .product-content {
+  height: 100vh;
+  display: flex;
+}
+main #product .container .product-content .product-image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+main #product .container .product-content .product-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main #product .container .product-content .product-text h2 {
+  font-size: 64px;
+  color: #413E3C;
+  font-weight: 400;
+}
+main #product .container .product-content .product-text .line {
+  background-color: #FF6F0F;
+  width: 125px;
+  height: 2px;
+}
+main #product .container .product-content .product-text p {
+  font-size: 18px;
+  color: #403C3C;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+main #product .container .product-content .product-text .product-total {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #FF6F0F;
+  border-radius: 10px;
+  height: 100px;
+  padding: 10px;
+}
+main #product .container .product-content .product-text .product-total .total-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #product .container .product-content .product-text .product-total .total-item h4 {
+  color: #403C3C;
+  font-size: 20px;
+  font-weight: 400;
+}
+main #product .container .product-content .product-text .product-total .total-item span {
+  font-weight: 700;
+  color: #FF6F0F;
+  font-size: 32px;
+}
+main #product .container .product-content .product-text .product-total .border-total {
+  border-right: 1px solid #FF6F0F;
+  border-left: 1px solid #FF6F0F;
+  padding: 0 20px;
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   header .container .header-content nav {
@@ -263,8 +327,41 @@ main #home .container .home-content .home-shop ul .icon a {
     bottom: 0;
     margin-bottom: 20px;
   }
+  main #product .container .product-content {
+    flex-direction: column;
+  }
+  main #product .container .product-content .product-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+  main #product .container .product-content .product-image img {
+    width: 100%;
+  }
+  main #product .container .product-content .product-text {
+    width: 100%;
+  }
+  main #product .container .product-content .product-text h2 {
+    font-size: 50px;
+  }
+  main #product .container .product-content .product-text .product-total {
+    width: 100%;
+    padding: 10px;
+  }
+  main #product .container .product-content .product-text .product-total .total-item {
+    padding: 0 10px;
+  }
+  main #product .container .product-content .product-text .product-total .total-item h4 {
+    font-size: 18px;
+  }
+  main #product .container .product-content .product-text .product-total .total-item span {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  main #product .container .product-content .product-text .product-total .border-total {
+    padding: 0 10px;
+  }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
   header .container .header-content nav {
     display: none;
   }
@@ -309,6 +406,39 @@ main #home .container .home-content .home-shop ul .icon a {
     bottom: 5%;
     right: 0;
   }
+  main #product .container .product-content {
+    flex-direction: column;
+  }
+  main #product .container .product-content .product-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+  main #product .container .product-content .product-image img {
+    width: 100%;
+  }
+  main #product .container .product-content .product-text {
+    width: 100%;
+  }
+  main #product .container .product-content .product-text h2 {
+    font-size: 50px;
+  }
+  main #product .container .product-content .product-text .product-total {
+    width: 100%;
+    padding: 10px;
+  }
+  main #product .container .product-content .product-text .product-total .total-item {
+    padding: 0 10px;
+  }
+  main #product .container .product-content .product-text .product-total .total-item h4 {
+    font-size: 18px;
+  }
+  main #product .container .product-content .product-text .product-total .total-item span {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  main #product .container .product-content .product-text .product-total .border-total {
+    padding: 0 10px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   main #home {
@@ -345,5 +475,42 @@ main #home .container .home-content .home-shop ul .icon a {
   main #home .container .home-content .home-shop {
     bottom: 5%;
     right: 0;
+  }
+  main #product .container .product-content {
+    flex-direction: row;
+  }
+  main #product .container .product-content .product-image {
+    width: 50%;
+    margin-top: 20px;
+  }
+  main #product .container .product-content .product-image img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main #product .container .product-content .product-text {
+    width: 50%;
+  }
+  main #product .container .product-content .product-text h2 {
+    font-size: 50px;
+  }
+  main #product .container .product-content .product-text .product-total {
+    width: 100%;
+    padding: 10px;
+  }
+  main #product .container .product-content .product-text .product-total .total-item {
+    padding: 0 10px;
+  }
+  main #product .container .product-content .product-text .product-total .total-item h4 {
+    text-align: center;
+    font-size: 18px;
+  }
+  main #product .container .product-content .product-text .product-total .total-item span {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  main #product .container .product-content .product-text .product-total .border-total {
+    padding: 0 10px;
   }
 }/*# sourceMappingURL=style.css.map */
