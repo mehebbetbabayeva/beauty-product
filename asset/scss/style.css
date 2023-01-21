@@ -284,6 +284,59 @@ main #product .container .product-content .product-text .product-total .border-t
   border-left: 1px solid #FF6F0F;
   padding: 0 20px;
 }
+main #about {
+  height: 100vh;
+  background-color: #F2ECE7;
+}
+main #about .container .about-content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #about .container .about-content h1 {
+  color: #413E3C;
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+main #about .container .about-content h1 span {
+  color: #FF6F0F;
+}
+main #about .container .about-content .about-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #about .container .about-content .about-card .card-item {
+  background-color: #fff;
+  border-radius: 20px;
+}
+main #about .container .about-content .about-card .card-item .card-item-title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+}
+main #about .container .about-content .about-card .card-item .card-item-title li a {
+  color: #413E3C;
+  font-size: 24px;
+}
+main #about .container .about-content .about-card .card-item .card-item-title .icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #FF6F0F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #about .container .about-content .about-card .card-item .card-item-title .icon a {
+  color: white;
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   header .container .header-content nav {
@@ -327,7 +380,11 @@ main #product .container .product-content .product-text .product-total .border-t
     bottom: 0;
     margin-bottom: 20px;
   }
+  main #product {
+    height: auto;
+  }
   main #product .container .product-content {
+    height: auto;
     flex-direction: column;
   }
   main #product .container .product-content .product-image {
@@ -360,8 +417,40 @@ main #product .container .product-content .product-text .product-total .border-t
   main #product .container .product-content .product-text .product-total .border-total {
     padding: 0 10px;
   }
+  main #about {
+    margin-top: 20px;
+    height: auto;
+  }
+  main #about .container .about-content {
+    height: auto;
+    width: 100%;
+  }
+  main #about .container .about-content h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  main #about .container .about-content .about-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main #about .container .about-content .about-card .card-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  main #about .container .about-content .about-card .card-item img {
+    width: 100%;
+  }
+  main #about .container .about-content .about-card .card-item .card-item-title {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+  }
 }
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   header .container .header-content nav {
     display: none;
   }
@@ -394,19 +483,21 @@ main #product .container .product-content .product-text .product-total .border-t
     top: 0;
   }
   main #home .container .home-content .product-item-left-bottom {
-    bottom: 5%;
+    bottom: 15%;
     left: 0;
   }
   main #home .container .home-content .product-item-right-bottom {
-    bottom: 30%;
-    left: 0;
-    margin-bottom: 20px;
+    display: none;
   }
   main #home .container .home-content .home-shop {
     bottom: 5%;
-    right: 0;
+    left: 0;
+  }
+  main #product {
+    height: auto;
   }
   main #product .container .product-content {
+    height: auto;
     flex-direction: column;
   }
   main #product .container .product-content .product-image {
@@ -438,6 +529,42 @@ main #product .container .product-content .product-text .product-total .border-t
   }
   main #product .container .product-content .product-text .product-total .border-total {
     padding: 0 10px;
+  }
+  main #about {
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+  }
+  main #about .container {
+    width: 100%;
+  }
+  main #about .container .about-content {
+    height: auto;
+    width: 100%;
+  }
+  main #about .container .about-content h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  main #about .container .about-content .about-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main #about .container .about-content .about-card .card-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  main #about .container .about-content .about-card .card-item img {
+    width: 100%;
+  }
+  main #about .container .about-content .about-card .card-item .card-item-title {
+    display: flex;
+    flex-direction: row;
+    height: 90px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {

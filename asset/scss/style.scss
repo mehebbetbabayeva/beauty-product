@@ -10,6 +10,7 @@
     max-width: 90%;
     margin: 0 auto;
 }
+
 @mixin flex-between{
     display: flex;
     justify-content: space-between;
@@ -294,6 +295,60 @@ main{
             }
         }
     }
+    #about{
+        height: 100vh;
+        background-color: #F2ECE7;
+        .container{
+            .about-content{
+                height: 100vh;
+                width: 100%;
+                @include flex-center();
+                flex-direction: column;
+                h1{
+                    color:#413E3C;
+                    font-size: 64px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    span{
+                        color: #FF6F0F;
+                    }
+                }
+                .about-card{
+                 width: 100%;
+                  display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 .card-item{
+                    background-color: #fff;
+                    border-radius:  20px;
+                    .card-item-title{
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        height: 60px;
+                        li{
+                            
+                            a{
+                                color: #413E3C;
+                                font-size: 24px;
+                            }
+                        }
+                        .icon{
+                            width: 36px;
+                            height: 36px;
+                            border-radius: 50%;
+                            background-color: #FF6F0F;
+                            @include flex-center();
+                            a{
+                                color: white;
+                            }
+                        }
+                    }
+                 }
+                }
+            }
+        }
+    }
 }
 
 
@@ -355,8 +410,10 @@ main{
                 }
             }
         #product{  
+            height: auto;
                 .container{
                     .product-content{
+                        height: auto;
                         flex-direction: column;
                         .product-image{
                             width: 100%;
@@ -393,14 +450,47 @@ main{
                     }
                 }
             }
-
+            #about{
+                margin-top: 20px;
+                height: auto;
+                .container{
+                    .about-content{
+                        height:auto;
+                        width: 100%;
+                        h1{   
+                            font-size: 40px;
+                            text-align: center;
+                            margin: 20px 0;   
+                        }
+                        .about-card{
+                         width: 100%;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: center;
+                         .card-item{
+                            width: 100%;
+                            margin-bottom: 30px;
+                            img{
+                                width: 100%;
+                            }
+                            .card-item-title{
+                                display: flex;
+                                flex-direction: column;
+                                height: 90px;
+                            }
+                         }
+                        }
+                    }
+                }
+            }
         }
     }
 
 
 
 //responsive tablet 
-@media (min-width:480px) and (max-width:768px){
+@media (min-width:481px) and (max-width:768px){
     header{
         .container{
             .header-content{
@@ -440,26 +530,26 @@ main{
                         
                     }
                     .product-item-left-bottom{
-                         bottom: 5%;
+                         bottom: 15%;
                         left: 0;   
                     }
                     .product-item-right-bottom{
-                        bottom: 30%;
-                        left: 0;
-                        margin-bottom: 20px;
+                        display: none;
                     }
                     
                     .home-shop{
                         bottom: 5%;
-                        right: 0;
+                        left: 0;
                         
                     }
                 }
             }
         }
-        #product{  
+        #product{ 
+            height: auto; 
             .container{
                 .product-content{
+                    height: auto;
                     flex-direction: column;
                     .product-image{
                         width: 100%;
@@ -492,6 +582,42 @@ main{
     
                             
                         }
+                    }
+                }
+            }
+        }
+        #about{
+            width: 100%;
+            margin-top: 20px;
+            height: auto;
+            .container{
+                width: 100%;
+                .about-content{
+                    height:auto;
+                    width: 100%;
+                    h1{   
+                        font-size: 40px;
+                        text-align: center;
+                        margin: 20px 0;   
+                    }
+                    .about-card{
+                     width: 100%;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     align-items: center;
+                     .card-item{
+                        width: 100%;
+                        margin-bottom: 30px;
+                        img{
+                            width: 100%;
+                        }
+                        .card-item-title{
+                            display: flex;
+                            flex-direction: row;
+                            height: 90px;
+                        }
+                     }
                     }
                 }
             }
@@ -584,5 +710,6 @@ main{
                 }
             }
         }
+       
     } 
 }
