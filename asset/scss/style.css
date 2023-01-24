@@ -428,11 +428,11 @@ main #store .container .store-content .store-card .store-card-item button {
     display: block;
   }
   main #home {
-    height: auto;
+    height: 140vh;
   }
   main #home .container .home-content .home-text {
     width: 100%;
-    top: 30%;
+    top: 25%;
     left: 0;
   }
   main #home .container .home-content .home-text p {
@@ -445,7 +445,7 @@ main #store .container .store-content .store-card .store-card-item button {
     display: none;
   }
   main #home .container .home-content .product-item-left-bottom {
-    top: 60%;
+    top: 50%;
   }
   main #home .container .home-content .product-item-right-bottom {
     display: none;
@@ -456,7 +456,7 @@ main #store .container .store-content .store-card .store-card-item button {
   }
   main #home .container .home-content .home-shop {
     left: 0;
-    bottom: 0;
+    top: 80%;
     margin-bottom: 20px;
   }
   main #product {

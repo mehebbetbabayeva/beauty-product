@@ -455,12 +455,12 @@ main{
     }
     main{
         #home{
-            height: auto;
-            .container{
+            height: 140vh;
+            .container{  
                 .home-content{
                     .home-text{
                         width: 100%;
-                        top: 30%;
+                        top: 25%;
                         left: 0;
                         p{
                             font-size: 50px;
@@ -473,7 +473,7 @@ main{
                      display: none; 
                     }
                     .product-item-left-bottom{
-                        top:60% ;
+                        top:50% ;
                     }
                     .product-item-right-bottom{
                         display: none;
@@ -484,7 +484,7 @@ main{
                     }
                     .home-shop{
                         left: 0;
-                        bottom: 0;
+                        top: 80%;
                         margin-bottom: 20px;
                     }                    
                 }    
