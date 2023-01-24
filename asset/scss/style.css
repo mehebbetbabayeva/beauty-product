@@ -432,7 +432,7 @@ main #store .container .store-content .store-card .store-card-item button {
   }
   main #home .container .home-content .home-text {
     width: 100%;
-    top: 25%;
+    top: 30%;
     left: 0;
   }
   main #home .container .home-content .home-text p {
@@ -445,7 +445,7 @@ main #store .container .store-content .store-card .store-card-item button {
     display: none;
   }
   main #home .container .home-content .product-item-left-bottom {
-    top: 55%;
+    top: 60%;
   }
   main #home .container .home-content .product-item-right-bottom {
     display: none;
