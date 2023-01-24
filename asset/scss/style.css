@@ -337,6 +337,85 @@ main #about .container .about-content .about-card .card-item .card-item-title .i
 main #about .container .about-content .about-card .card-item .card-item-title .icon a {
   color: white;
 }
+main #store {
+  height: 100vh;
+  background-color: #fff;
+}
+main #store .container .store-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 150px 0;
+}
+main #store .container .store-content .store-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+main #store .container .store-content .store-title h1 {
+  color: #413E3C;
+  font-size: 64px;
+  font-weight: 400;
+}
+main #store .container .store-content .store-title h1 span {
+  font-size: 64px;
+  font-weight: 400;
+  color: #FF6F0F;
+}
+main #store .container .store-content .store-title .store-icon {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+main #store .container .store-content .store-title .store-icon a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #FF6F0F;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #store .container .store-content .store-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #store .container .store-content .store-card .store-card-item {
+  display: flex;
+  flex-direction: column;
+}
+main #store .container .store-content .store-card .store-card-item figure img {
+  border-radius: 20px;
+}
+main #store .container .store-content .store-card .store-card-item figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+main #store .container .store-content .store-card .store-card-item figure figcaption h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #413E3C;
+}
+main #store .container .store-content .store-card .store-card-item figure figcaption span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #FF6F0F;
+}
+main #store .container .store-content .store-card .store-card-item button {
+  border: 1px solid #FF6F0F;
+  background-color: white;
+  font-size: 18px;
+  color: #413E3C;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   header .container .header-content nav {
@@ -448,6 +527,30 @@ main #about .container .about-content .about-card .card-item .card-item-title .i
     display: flex;
     flex-direction: column;
     height: 90px;
+  }
+  main #store {
+    height: auto;
+  }
+  main #store .container .store-content {
+    padding: 20px 0;
+  }
+  main #store .container .store-content .store-title h1 {
+    font-size: 30px;
+  }
+  main #store .container .store-content .store-title h1 span {
+    font-size: 30px;
+  }
+  main #store .container .store-content .store-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main #store .container .store-content .store-card .store-card-item {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  main #store .container .store-content .store-card .store-card-item figure img {
+    width: 100%;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -566,6 +669,30 @@ main #about .container .about-content .about-card .card-item .card-item-title .i
     flex-direction: row;
     height: 90px;
   }
+  main #store {
+    height: auto;
+  }
+  main #store .container .store-content {
+    padding: 20px 0;
+  }
+  main #store .container .store-content .store-title h1 {
+    font-size: 30px;
+  }
+  main #store .container .store-content .store-title h1 span {
+    font-size: 30px;
+  }
+  main #store .container .store-content .store-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main #store .container .store-content .store-card .store-card-item {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  main #store .container .store-content .store-card .store-card-item figure img {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   main #home {
@@ -642,6 +769,7 @@ main #about .container .about-content .about-card .card-item .card-item-title .i
   }
   main #about {
     width: 100%;
+    padding: 20px 0;
     height: auto;
   }
   main #about .container {
@@ -672,5 +800,32 @@ main #about .container .about-content .about-card .card-item .card-item-title .i
   }
   main #about .container .about-content .about-card .card-item .card-item-title li {
     text-align: center;
+  }
+  main #store {
+    height: auto;
+  }
+  main #store .container .store-content {
+    padding: 30px 0;
+  }
+  main #store .container .store-content .store-title h1 {
+    font-size: 40px;
+  }
+  main #store .container .store-content .store-title h1 span {
+    font-size: 40px;
+  }
+  main #store .container .store-content .store-card .store-card-item {
+    width: 30%;
+  }
+  main #store .container .store-content .store-card .store-card-item figure img {
+    width: 100%;
+  }
+  main #store .container .store-content .store-card .store-card-item figure figcaption h4 {
+    font-size: 20px;
+  }
+  main #store .container .store-content .store-card .store-card-item figure figcaption span {
+    font-size: 20px;
+  }
+  main #store .container .store-content .store-card .store-card-item button {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
