@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- start header -->
-    <header>
+    <header  class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
@@ -34,12 +34,26 @@
                         <li class="cart-icon"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul>
                 </div>
-                <div class="menu">
+                <div class="menu" id="header-menu">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </div>
+        
     </header>
+    <div class="header-menu  active deactive">
+        <div class="header-menu-click">
+            <i class="fa-solid fa-x  backbtn"></i>
+        </div>
+        <nav>
+            <ul>
+                <li  class="menu-li"><a href="#product">Products</a></li>
+                <li class="menu-li"><a href="#about">About Us</a></li>
+                <li class="menu-li"><a href="#store">Our Store</a></li>
+                <li class="menu-li"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
     <!-- finish header -->
 
     <!-- start main -->
@@ -256,5 +270,7 @@
 
 <!-- icon link -->
 <script src="https://kit.fontawesome.com/ee92479312.js" crossorigin="anonymous"></script>
+<!-- js link -->
+<script src="./asset/js/main.js"></script>
 </body>
 </html>

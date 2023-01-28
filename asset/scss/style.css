@@ -18,6 +18,7 @@ header {
   background-color: #F2ECE7;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 10;
 }
 header .container .header-content {
@@ -36,7 +37,6 @@ header .container .header-content nav ul li {
 header .container .header-content nav ul li a {
   color: #000;
   font-size: 16px;
-  font-family: "Red Hat Display", sans-serif;
 }
 header .container .header-content .cart ul {
   display: flex;
@@ -65,6 +65,40 @@ header .container .header-content .menu {
   display: none;
   color: #FF860D;
   font-size: 25px;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 40px;
+  transition: all 1s ease-in;
+}
+.header-menu .header-menu-click {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #FF860D;
+}
+.header-menu nav ul {
+  display: flex;
+  flex-direction: column;
+}
+.header-menu nav ul li {
+  margin-bottom: 30px;
+}
+.header-menu nav ul li a {
+  color: #000;
+  font-size: 20px;
+}
+.header-menu nav ul li:hover a {
+  color: pink;
 }
 
 main #home {
@@ -507,6 +541,14 @@ footer .footer-content #contact ul li a, footer .footer-content #contact ul li p
 }
 footer .footer-content #contact ul li a i, footer .footer-content #contact ul li p i {
   margin-right: 5px;
+}
+
+.active {
+  transform: translateX(1);
+}
+
+.deactive {
+  transform: translateX(-100%);
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
