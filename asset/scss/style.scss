@@ -73,12 +73,13 @@ header{
                 display: none;
                 color: #FF860D;
                 font-size: 25px;
+                cursor: pointer;
             }
         }
     }
 }
 .header-menu{
-    position: absolute;
+    position:fixed;
     top: 0;
     left: 0;
     z-index: 100;
@@ -94,6 +95,9 @@ header{
        font-size: 25px;
        margin-bottom: 20px;
        color: #FF860D;
+       i{
+        cursor: pointer;
+       }
     }
     nav{
         ul{

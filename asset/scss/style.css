@@ -65,10 +65,11 @@ header .container .header-content .menu {
   display: none;
   color: #FF860D;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .header-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -85,6 +86,9 @@ header .container .header-content .menu {
   font-size: 25px;
   margin-bottom: 20px;
   color: #FF860D;
+}
+.header-menu .header-menu-click i {
+  cursor: pointer;
 }
 .header-menu nav ul {
   display: flex;
