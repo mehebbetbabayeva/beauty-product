@@ -11,12 +11,7 @@ document.querySelector(".backbtn").addEventListener("click" , ()=>{
 
 
 
-// let ul = document.getElementByID('menu-ul');
-// let li = ul.getElementsByClassName('menu-li');
-// li.addEventListener("click",()=>{
-//    let mobile=document.querySelector(".active");
-//    mobile.classList.add("deactive"); 
-// })
+
 
 function menu (){
    let mobile=document.querySelector(".active");
